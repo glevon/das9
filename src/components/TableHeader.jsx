@@ -13,8 +13,9 @@ class TableHeader extends Component {
                     <tr>
                         {
                             Object.keys(this.props.Data.user[0]).map((key,i)=>(
-                                    <th key={i} onClick={this.sort.bind(this,key)}>
+                                    <th key={i}  >
                                         {key}
+                                        <button className="btn btn-primary" onClick={this.sort.bind(this,key)} ><i class="fa fa-sort"></i></button>                                      
                                     </th>
                             ))
                         }
